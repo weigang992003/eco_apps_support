@@ -69,7 +69,7 @@ module EcoAppsSupport
 
     def paginate_links(collection, update = nil, custom_params = {})
       content_tag :div, :class => "list_table_page" do
-        if collection.is_a?(WillPaginate::Collection)
+        if collection.respond_to?(:total_pages)
           content = t(:total_record, :count => collection.total_entries).html_safe
           content << collection_range_title(collection).to_s
           if collection.total_entries > 0
