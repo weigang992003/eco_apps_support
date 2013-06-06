@@ -89,8 +89,7 @@ module EcoAppsSupport
     end
 
     def make_table_sortable(table_id)
-      javascript_tag do
-        %{var sorter = new TINY.table.sorter("sorter");
+      javascript_tag %{var sorter = new TINY.table.sorter("sorter");
           sorter.head = "head";
           sorter.asc = "desc";
           sorter.desc = "asc";
@@ -101,8 +100,7 @@ module EcoAppsSupport
           sorter.paginate = true;
           sorter.currentid = "";
           sorter.limitid = "pagelimit";
-          sorter.init("#{table_id}",1);}
-      end
+          sorter.init("#{table_id}",1);}  
     end
 
     def calendar_view(options = {}, &block)
