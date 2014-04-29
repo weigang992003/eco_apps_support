@@ -10,8 +10,7 @@
     abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
     abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
-    order: [ :year, :month, :day ]
-  
+
   time:
     formats:
       default: "%a %b %d %H:%M:%S %Z %Y"
@@ -31,10 +30,10 @@
       datetime:
         formats:
           default: "%Y-%m-%dT%H:%M:%S%Z"
-          
+
     am: 'am'
     pm: 'pm'
-      
+
   datetime:
     distance_in_words:
       half_a_minute: 'half a minute'
@@ -72,7 +71,7 @@
       over_x_years:
         one: 'over 1 year'
         other: '%{count} years'
-      
+
   number:
     format:
       precision: 3
@@ -83,7 +82,7 @@
         unit: '$'
         precision: 2
         format: '%u %n'
-        
+
   activerecord:
     error:
       header_message: ["Couldn't save this %{object_name}: 1 error", "Couldn't save this %{object_name}: %{count} errors."]
@@ -109,7 +108,7 @@
         less_than_or_equal_to: "must be less than or equal to %{count}"
         odd: "must be odd"
         even: "must be even"
-      
+
   common:
     submit: Submit
     confirm: Are you sure?
